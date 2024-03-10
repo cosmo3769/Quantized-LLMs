@@ -40,6 +40,14 @@ Visit the docs link for [Adaptations and Challenges](https://docs.google.com/doc
 |-------------------|-------|------|------|---------------|-----:|---|-----:|
 |codexglue_code2text|N/A    |none  |None  |smoothed_bleu_4|1.3519|±  |0.3067|
 
+|                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
+|---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
+|bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
+
+|                    Tasks                     |Version|Filter|n-shot|Metric|Value|   |Stderr|
+|----------------------------------------------|------:|------|------|------|----:|---|-----:|
+|bigbench_code_line_description_multiple_choice|      0|none  |None  |acc   | 0.25|±  |0.0564|
+
 ### Quantized starcoderbase-3b model to GPTQ format
 
 |         Tasks         |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
@@ -55,3 +63,11 @@ Visit the docs link for [Adaptations and Challenges](https://docs.google.com/doc
 |      Groups       |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
 |-------------------|-------|------|------|---------------|-----:|---|-----:|
 |codexglue_code2text|N/A    |none  |None  |smoothed_bleu_4|0.9254|±  |0.2109|
+
+|                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
+|---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
+|bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
+
+|                    Tasks                     |Version|Filter|n-shot|Metric|Value|   |Stderr|
+|----------------------------------------------|------:|------|------|------|----:|---|-----:|
+|bigbench_code_line_description_multiple_choice|      0|none  |None  |acc   |  0.1|±  |   0.1|
