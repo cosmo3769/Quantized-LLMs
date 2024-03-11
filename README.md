@@ -10,19 +10,25 @@ Visit the docs link for [Adaptations and Challenges](https://docs.google.com/doc
 
 ## Quantized to GPTQ format
 
-* [starcoderbase-3b-GPTQ](https://huggingface.co/cosmo3769/starcoderbase-3b-GPTQ)
+The base model is quantized to GPTQ format using [AutoGPTQ](https://github.com/Significant-Gravitas/AutoGPT).
 
-[Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize-starcodebase-3b-gptq.ipynb) 
+Here is the [Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize-starcodebase-3b-gptq.ipynb). 
+
+* [starcoderbase-3b-GPTQ](https://huggingface.co/cosmo3769/starcoderbase-3b-GPTQ)
 
 ## Quantized to GGUF format
 
-* [starcoderbase-3b-GGUF](https://huggingface.co/cosmo3769/starcoderbase-3b-GGUF)
+The base model is quantized to GGUF format using [llama.cpp](https://github.com/ggerganov/llama.cpp).
 
-[Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize_starcoderbase_3b_GGUF.ipynb)
+Here is the [Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize_starcoderbase_3b_GGUF.ipynb).
+
+* [starcoderbase-3b-GGUF](https://huggingface.co/cosmo3769/starcoderbase-3b-GGUF)
 
 ## Benchmark 
 
-[Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/llmbenchmark-starcodebase-3b-lm-eval-harness.ipynb)
+The benchmark is done using [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness).
+
+Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/llmbenchmark-starcodebase-3b-lm-eval-harness.ipynb).
 
 ### Baseline starcoderbase-3b model (non-quantized)
 
