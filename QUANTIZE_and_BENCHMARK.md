@@ -126,3 +126,19 @@ Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/bl
 |                    Tasks                     |Version|Filter|n-shot|Metric|Value |   |Stderr|
 |----------------------------------------------|------:|------|------|------|-----:|---|-----:|
 |bigbench_code_line_description_multiple_choice|      0|none  |None  |acc   |0.1333|±  |0.0443|
+
+## Challenges and Adapted Solutions
+
+* While benchmarking using lm-evaluation-harness, I encountered an issue which I have raised [here](https://github.com/EleutherAI/lm-evaluation-harness/issues/1513#issuecomment-1985495471) in detail. I fixed this issue with an [MR](https://github.com/EleutherAI/lm-evaluation-harness/pull/1551).
+* While researching, I also used [bigcode-evaluation-harness](https://github.com/bigcode-project/bigcode-evaluation-harness) for benchmarking. But in terms of usage, I got an issue which I have discussed [here](https://github.com/bigcode-project/bigcode-evaluation-harness/issues/202) on length.
+* Since I have been using colab with 1 T4 GPU, and kaggle kernel with 2 T4 GPU, I had a major issue with compute resources.
+
+## Some notable attempts
+
+While researching and implementing, I did few things but are not included in the final implementation.
+
+* Quantized [codellama/CodeLlama-7b-hf](https://huggingface.co/codellama/CodeLlama-7b-hf) to GGUF format. Here is the [HuggingFace model card for cosmo3769/CodeLlama-7b-hf-GGUF](). Here is the [Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize_CodeLlama_7b_GGUF.ipynb).
+* Quantized [mlabonne/EvolCodeLlama-7b](https://huggingface.co/mlabonne/EvolCodeLlama-7b) to GGUF format. Here is the [HuggingFace model card for mlabonne/EvolCodeLlama-7b-GGUF](https://huggingface.co/mlabonne/EvolCodeLlama-7b-GGUF). Here is the [Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize_EvolCodeLlama_7b_GGUF.ipynb). **NOTE** - The quantized model was already pushed by [mlabonne](https://huggingface.co/mlabonne) so I have not pushed it to Hub.
+* Quantized [stabilityai/stablelm-zephyr-3b](https://huggingface.co/stabilityai/stablelm-zephyr-3b) to GGUF format. Here is the [HuggingFace model card for cosmo3769/stablelm-zephyr-3b-GGUF](https://huggingface.co/cosmo3769/stablelm-zephyr-3b-GGUF). Here is the [Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize_stablelm_zephyr_3b_GGUF.ipynb).
+* Quantized [bigcode/starcoderbase-3b](https://huggingface.co/bigcode/starcoderbase-3b) to GGUF format (q4_k_s). Here is the [HuggingFace model card for cosmo3769/starcoderbase-3b-GGUF](https://huggingface.co/cosmo3769/starcoderbase-3b-GGUF). Here is the [Quantization script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/quantize_starcoderbase_3b_q4_k_s_GGUF.ipynb).
+* I have also quantized gemma models but have not included here since it was already done heavily by other user.
