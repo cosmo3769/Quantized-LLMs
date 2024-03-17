@@ -37,10 +37,6 @@ Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/bl
 | - code2text_python    |      1|none  |None  |smoothed_bleu_4|2.8338|±  |1.5323|
 | - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.7601|±  |0.7601|
 
-|      Groups       |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text|N/A    |none  |None  |smoothed_bleu_4|1.3519|±  |0.3067|
-
 |                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
 |---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
 |bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
@@ -60,10 +56,6 @@ Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/bl
 | - code2text_php       |      1|none  |None  |smoothed_bleu_4|0.5171|±  |0.5171|
 | - code2text_python    |      1|none  |None  |smoothed_bleu_4|1.1676|±  |0.2156|
 | - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.7601|±  |0.7601|
-
-|      Groups       |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text|N/A    |none  |None  |smoothed_bleu_4|0.9254|±  |0.2109|
 
 |                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
 |---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
@@ -91,10 +83,6 @@ Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/bl
 | - code2text_python    |      1|none  |None  |smoothed_bleu_4|1.1950|±  |0.2819|
 | - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.0000|±  |0.0000|
 
-|      Groups       |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text|N/A    |none  |None  |smoothed_bleu_4|0.8767|±  |0.0592|
-
 |                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
 |---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
 |bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
@@ -114,10 +102,6 @@ Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/bl
 | - code2text_php       |      1|none  |None  |smoothed_bleu_4|0.6055|±  |0.6055|
 | - code2text_python    |      1|none  |None  |smoothed_bleu_4|1.1460|±  |1.1460|
 | - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.0000|±  |0.0000|
-
-|      Groups       |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text|N/A    |none  |None  |smoothed_bleu_4|0.7959|±  | 0.218|
 
 |                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
 |---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
