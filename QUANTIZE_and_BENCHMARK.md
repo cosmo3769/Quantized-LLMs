@@ -25,45 +25,20 @@ The benchmark is done using [lm-evaluation-harness](https://github.com/EleutherA
 
 Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/llmbenchmark-starcodebase-3b-lm-eval-harness.ipynb).
 
-### Baseline starcoderbase-3b model (non-quantized)
+| Tasks                  | Version | Filter | n-shot | Metric          | non-quantized Value | non-quantized Stderr | quantized Value (GPTQ) | quantized Stderr (GPTQ) |
+|------------------------|---------|--------|--------|-----------------|----------------------|----------------------|-----------------------|-------------------------|
+| codexglue_code2text    | N/A     | none   | None   | smoothed_bleu_4 | 1.3519               | ± 0.3067             | 0.9254                | ± 0.2109                |
+| - code2text_go         | 1       | none   | None   | smoothed_bleu_4 | 1.5781               | ± 0.3734             | 1.4702                | ± 0.4813                |
+| - code2text_java       | 1       | none   | None   | smoothed_bleu_4 | 1.2778               | ± 0.1991             | 0.6907                | ± 0.6907                | 
+| - code2text_javascript | 1       | none   | None   | smoothed_bleu_4 | 1.1443               | ± 0.1181             | 0.9469                | ± 0.0339                |
+| - code2text_php        | 1       | none   | None   | smoothed_bleu_4 | 0.5171               | ± 0.5171             | 0.5171                | ± 0.5171                |
+| - code2text_python     | 1       | none   | None   | smoothed_bleu_4 | 2.8338               | ± 1.5323             | 1.1676                | ± 0.2156                |
+| - code2text_ruby       | 3       | none   | None   | smoothed_bleu_4 | 0.7601               | ± 0.7601             | 0.7601                | ± 0.7601                |
 
-|         Tasks         |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-----------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text    |N/A    |none  |None  |smoothed_bleu_4|1.3519|±  |0.3067|
-| - code2text_go        |      1|none  |None  |smoothed_bleu_4|1.5781|±  |0.3734|
-| - code2text_java      |      1|none  |None  |smoothed_bleu_4|1.2778|±  |0.1991|
-| - code2text_javascript|      1|none  |None  |smoothed_bleu_4|1.1443|±  |0.1181|
-| - code2text_php       |      1|none  |None  |smoothed_bleu_4|0.5171|±  |0.5171|
-| - code2text_python    |      1|none  |None  |smoothed_bleu_4|2.8338|±  |1.5323|
-| - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.7601|±  |0.7601|
-
-|                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
-|---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
-|bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
-
-|                    Tasks                     |Version|Filter|n-shot|Metric|Value|   |Stderr|
-|----------------------------------------------|------:|------|------|------|----:|---|-----:|
-|bigbench_code_line_description_multiple_choice|      0|none  |None  |acc   | 0.25|±  |0.0564|
-
-### Quantized starcoderbase-3b model to GPTQ format
-
-|         Tasks         |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-----------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text    |N/A    |none  |None  |smoothed_bleu_4|0.9254|±  |0.2109|
-| - code2text_go        |      1|none  |None  |smoothed_bleu_4|1.4702|±  |0.4813|
-| - code2text_java      |      1|none  |None  |smoothed_bleu_4|0.6907|±  |0.6907|
-| - code2text_javascript|      1|none  |None  |smoothed_bleu_4|0.9469|±  |0.0339|
-| - code2text_php       |      1|none  |None  |smoothed_bleu_4|0.5171|±  |0.5171|
-| - code2text_python    |      1|none  |None  |smoothed_bleu_4|1.1676|±  |0.2156|
-| - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.7601|±  |0.7601|
-
-|                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
-|---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
-|bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
-
-|                    Tasks                     |Version|Filter|n-shot|Metric|Value|   |Stderr|
-|----------------------------------------------|------:|------|------|------|----:|---|-----:|
-|bigbench_code_line_description_multiple_choice|      0|none  |None  |acc   |  0.1|±  |   0.1|
+| Tasks                                         | Version | Filter | n-shot | Metric         | non-quantized Value | non-quantized Stderr | quantized Value (GPTQ) | quantized Stderr (GPTQ) |
+|-----------------------------------------------|---------|--------|--------|----------------|----------------------|----------------------|-----------------|-----------------|
+| bigbench_code_line_description_generate_until |       1 | none   | None   | exact_match    | 0                    | ± 0                  | 0               | ± 0             |
+| bigbench_code_line_description_multiple_choice|       0 | none   | None   | acc            | 0.25                 | ± 0.0564             | 0.1             | ± 0.1           |
 
 ## Benchmark for starcoderbase-1b (Quantized and Non-Quantized)
 
@@ -71,45 +46,20 @@ The benchmark is done using [lm-evaluation-harness](https://github.com/EleutherA
 
 Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/blob/main/notebooks/llmbenchmark-starcoderbase-1b-lm-eval-harness.ipynb).
 
-### Baseline starcoderbase-1b model (non-quantized)
+| Tasks                  | Version | Filter | n-shot | Metric          | non-quantized Value | non-quantized Stderr | quantized Value (GPTQ) | quantized Stderr (GPTQ) |
+|------------------------|---------|--------|--------|-----------------|----------------------|----------------------|-----------------------|-------------------------|
+| codexglue_code2text    |   N/A   | none   | None   | smoothed_bleu_4 | 0.8767               | ± 0.0592             | 0.7959                | ± 0.2180                |
+| - code2text_go         |    1    | none   | None   | smoothed_bleu_4 | 1.0054               | ± 0.0983             | 0.9280                | ± 0.0291                |
+| - code2text_java       |    1    | none   | None   | smoothed_bleu_4 | 1.2158               | ± 0.1657             | 1.2112                | ± 0.1703                |
+| - code2text_javascript |    1    | none   | None   | smoothed_bleu_4 | 0.8560               | ± 0.0429             | 0.8848                | ± 0.0391                |
+| - code2text_php        |    1    | none   | None   | smoothed_bleu_4 | 0.9879               | ± 0.0887             | 0.6055                | ± 0.6055                |
+| - code2text_python     |    1    | none   | None   | smoothed_bleu_4 | 1.1950               | ± 0.2819             | 1.1460                | ± 1.1460                |
+| - code2text_ruby       |    3    | none   | None   | smoothed_bleu_4 | 0.0000               | ± 0.0000             | 0.0000                | ± 0.0000                |
 
-|         Tasks         |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-----------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text    |N/A    |none  |None  |smoothed_bleu_4|0.8767|±  |0.0592|
-| - code2text_go        |      1|none  |None  |smoothed_bleu_4|1.0054|±  |0.0983|
-| - code2text_java      |      1|none  |None  |smoothed_bleu_4|1.2158|±  |0.1657|
-| - code2text_javascript|      1|none  |None  |smoothed_bleu_4|0.8560|±  |0.0429|
-| - code2text_php       |      1|none  |None  |smoothed_bleu_4|0.9879|±  |0.0887|
-| - code2text_python    |      1|none  |None  |smoothed_bleu_4|1.1950|±  |0.2819|
-| - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.0000|±  |0.0000|
-
-|                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
-|---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
-|bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
-
-|                    Tasks                     |Version|Filter|n-shot|Metric|Value|   |Stderr|
-|----------------------------------------------|------:|------|------|------|----:|---|-----:|
-|bigbench_code_line_description_multiple_choice|      0|none  |None  |acc   | 0.15|±  |0.0465|
-
-### Quantized starcoderbase-1b model to GPTQ format
-
-|         Tasks         |Version|Filter|n-shot|    Metric     |Value |   |Stderr|
-|-----------------------|-------|------|------|---------------|-----:|---|-----:|
-|codexglue_code2text    |N/A    |none  |None  |smoothed_bleu_4|0.7959|±  |0.2180|
-| - code2text_go        |      1|none  |None  |smoothed_bleu_4|0.9280|±  |0.0291|
-| - code2text_java      |      1|none  |None  |smoothed_bleu_4|1.2112|±  |0.1703|
-| - code2text_javascript|      1|none  |None  |smoothed_bleu_4|0.8848|±  |0.0391|
-| - code2text_php       |      1|none  |None  |smoothed_bleu_4|0.6055|±  |0.6055|
-| - code2text_python    |      1|none  |None  |smoothed_bleu_4|1.1460|±  |1.1460|
-| - code2text_ruby      |      3|none  |None  |smoothed_bleu_4|0.0000|±  |0.0000|
-
-|                    Tasks                    |Version|Filter|n-shot|  Metric   |Value|   |Stderr|
-|---------------------------------------------|------:|------|------|-----------|----:|---|-----:|
-|bigbench_code_line_description_generate_until|      1|none  |None  |exact_match|    0|±  |     0|
-
-|                    Tasks                     |Version|Filter|n-shot|Metric|Value |   |Stderr|
-|----------------------------------------------|------:|------|------|------|-----:|---|-----:|
-|bigbench_code_line_description_multiple_choice|      0|none  |None  |acc   |0.1333|±  |0.0443|
+| Tasks                                         | Version | Filter | n-shot | Metric          | non-quantized Value | non-quantized Stderr | quantized Value (GPTQ) | quantized Stderr (GPTQ) |
+|-----------------------------------------------|---------|--------|--------|-----------------|----------------------|----------------------|-----------------|-----------------|
+| bigbench_code_line_description_generate_until |       1 | none   | None   | exact_match     | 0                    | ± 0                  | 0               | ± 0             |
+| bigbench_code_line_description_multiple_choice|       0 | none   | None   | acc             | 0.15                 | ± 0.0465             | 0.1333          | ± 0.0443        |
 
 ## Challenges and Adapted Solutions
 
