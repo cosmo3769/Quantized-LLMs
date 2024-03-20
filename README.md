@@ -11,7 +11,7 @@ Check the document on Deploying LLM to Mobile [here](https://github.com/cosmo376
 ## To-Dos
 
 - [ ] Benchmark GGUF format quantized model using lm-evaluation-harness
-- [ ] HumanEval benchmark (non-quantized, quantized (GPTQ, GGUF)
+- [ ] HumanEval benchmark (non-quantized, quantized (GPTQ, GGUF))
 - [ ] Research SmoothQuant
 - [ ] Pruning
 - [ ] Distillation
