@@ -38,7 +38,7 @@ Here is the [Benchmarking script](https://github.com/cosmo3769/Quantized-LLMs/bl
 | Tasks                                         | Version | Filter | n-shot | Metric         | non-quantized Value | non-quantized Stderr | quantized Value (GPTQ) | quantized Stderr (GPTQ) |
 |-----------------------------------------------|---------|--------|--------|----------------|----------------------|----------------------|-----------------|-----------------|
 | bigbench_code_line_description_generate_until |       1 | none   | None   | exact_match    | 0                    | ± 0                  | 0               | ± 0             |
-| bigbench_code_line_description_multiple_choice|       0 | none   | None   | acc            | 0.25                 | ± 0.0564             | 0.1             | ± 0.1           |
+| bigbench_code_line_description_multiple_choice|       0 | none   | None   | acc            | 0.25                 | ± 0.0564             | 0.3             | ± 0.0597        |
 
 ## Benchmark for starcoderbase-1b (Quantized and Non-Quantized)
 
