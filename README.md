@@ -8,9 +8,13 @@ Check the document on LLM Quantization and Benchmarking [here](https://github.co
 
 Check the document on Deploying LLM to Mobile [here](https://github.com/cosmo3769/Quantized-LLMs/blob/main/DEPLOY_MOBILE_GUIDE.md). It includes all my implementation details, challenges and adaptations.
 
+## Published studio at [Lightning AI](https://lightning.ai/cosmo3769)
+
+* [Post-Training Quantization to GPTQ format and Evaluation](https://lightning.ai/cosmo3769/studios/post-training-quantization-to-gptq-format-and-evaluation)
+
 ## To-Dos
 
-- [ ] Benchmark GGUF format quantized model using lm-evaluation-harness and llama-cpp-python
+- [x] Benchmark GGUF format quantized model using lm-evaluation-harness and llama-cpp-python
 - [ ] HumanEval benchmark (non-quantized, quantized (GPTQ, GGUF))
 - [ ] Research SmoothQuant
 - [ ] Pruning
