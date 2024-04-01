@@ -10,6 +10,7 @@ Check the document on Deploying LLM to Mobile [here](https://github.com/cosmo376
 
 ## Published studio at [Lightning AI](https://lightning.ai/cosmo3769)
 
+* [Post-Training Quantization to GGUF format and Evaluation](https://lightning.ai/cosmo3769/studios/post-training-quantization-to-gguf-format-and-evaluation)
 * [Post-Training Quantization to GPTQ format and Evaluation](https://lightning.ai/cosmo3769/studios/post-training-quantization-to-gptq-format-and-evaluation)
 
 ## To-Dos
